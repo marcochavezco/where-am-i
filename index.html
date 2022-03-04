@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script defer src="script.js"></script>
+    <title>Where Am I?</title>
+  </head>
+  <body>
+    <div class="sidebar">
+      <form class="form hidden">
+        <div class="form__row">
+          <label class="form__label latitude">Latitude</label>
+          <input
+            class="form__input form__input--latitude"
+            placeholder="Latitude"
+          />
+        </div>
+        <div class="form__row">
+          <label class="form__label longitude">Longitude</label>
+          <input
+            class="form__input form__input--longitude"
+            placeholder="Longitude"
+          />
+        </div>
+        <!-- <button class="btn btn--search">Search</button> -->
+        <button class="btn btn--current">Use current location</button>
+      </form>
+      <button class="btn dropbtn btn--search">Search</button>
+
+      <div class="container">
+        <ul class="locations">
+          <!-- <li class="location" data-id="1234567890">
+            <article class="location__country">
+              <h3 class="location__name">Awesome place</h3>
+              <img class="country__img" src="" />
+              <div class="country__data">
+                <h4 class="country__region">REGION</h4>
+                <p class="country__row"><span>👫</span>POP people</p>
+                <p class="country__row"><span>🗣️</span>LANG</p>
+                <p class="country__row"><span>💰</span>CUR</p>
+              </div>
+            </article>
+          </li> -->
+        </ul>
+      </div>
+    </div>
+    <div id="map"></div>
+  </body>
+</html>
