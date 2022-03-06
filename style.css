@@ -105,29 +105,53 @@ a:visited {
   background-color: var(--color-light--3);
   margin: 2rem 0rem;
   background-color: #fff;
-  color: var(--color-brand--3);
+  color: var(--color-dark--1);
   cursor: pointer;
 }
 
 .btn--current:hover {
-  background-color: var(--color-light--2);
+  background-color: rgb(202, 202, 202);
+}
+
+.btn__row {
+  width: 90%;
+  display: flex;
+
+  flex-direction: row;
+  background-color: var(--color-dark--2);
+  border-radius: 0 0 1rem 1rem;
 }
 
 .btn--search {
   border: none;
   width: 90%;
   padding: 1rem;
-  margin: 0rem 1rem 1rem 1rem;
+  margin: 0rem 0.5rem 0rem 0rem;
+
   background-color: var(--color-brand--2);
   font-size: 3rem;
   font-weight: 500;
   cursor: pointer;
   color: #fff;
-  border-radius: 1rem;
+  text-align: start;
+  border-radius: 1rem 0rem 0rem 1rem;
 }
 
 .btn--search:hover {
-  background-color: #5e55ce;
+  background-color: #847ce9;
+}
+
+.btn--global {
+  border: none;
+  width: 10%;
+  padding: 0rem;
+  margin: 0rem;
+  background-color: var(--color-brand--2);
+  border-radius: 0rem 1rem 1rem 0rem;
+}
+
+.btn--global:hover {
+  background-color: #847ce9;
 }
 
 /* Locations */

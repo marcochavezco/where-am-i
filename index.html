@@ -30,7 +30,7 @@
   </head>
   <body>
     <div class="sidebar">
-      <form class="form hidden">
+      <form class="form">
         <div class="form__row">
           <label class="form__label latitude">Latitude</label>
           <input
@@ -48,7 +48,10 @@
         <!-- <button class="btn btn--search">Search</button> -->
         <button class="btn btn--current">Use current location</button>
       </form>
-      <button class="btn btn--search">Search</button>
+      <div class="btn__row">
+        <button class="btn btn--search">Search</button>
+        <button class="btn btn--global">🌎</button>
+      </div>
 
       <div class="container">
         <ul class="locations">
