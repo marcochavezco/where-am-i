@@ -12,9 +12,10 @@ const containerLocations = document.querySelector(".container");
 
 class App {
   #map;
-
   constructor() {
     this._getPosition();
+
+    btnGlobal.addEventListener("click", this._globalView.bind(this));
   }
 
   // Get current position
@@ -44,7 +45,12 @@ class App {
   _loadMap = function (location, zoomLevel) {
     const { latitude } = location;
     const { longitude } = location;
-    this.#map = L.map("map").setView([latitude, longitude], zoomLevel);
+    this.#map = L.map("map", {
+      maxBounds: [
+        [180, -180],
+        [-180, 180],
+      ],
+    }).setView([latitude, longitude], zoomLevel);
 
     L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
       attribution:
@@ -54,8 +60,8 @@ class App {
     this._renderMarker([latitude, longitude]);
   };
 
-  _globalView(location) {
-    this.#map.setZoomAround([23.653767, -100.6377605], 2);
+  _globalView() {
+    this.#map.setView([0, 0], 2);
   }
   _renderMarker = function (location) {
     L.marker(location)

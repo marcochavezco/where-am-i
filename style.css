@@ -59,6 +59,7 @@ a:visited {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 0.5rem 2.5rem;
+  transition: all 0.5s, transform 1ms;
 }
 
 .form.hidden {
@@ -119,7 +120,7 @@ a:visited {
 
   flex-direction: row;
   background-color: var(--color-dark--2);
-  border-radius: 0 0 1rem 1rem;
+  border-radius: 1rem; /* 0 0 1 1 */
 }
 
 .btn--search {
