@@ -167,10 +167,22 @@ a:visited {
   width: 0;
 }
 
+.error {
+  color: #fff;
+  font-size: 1.8rem;
+  text-align: center;
+  padding: 0 2.25rem;
+}
+
+.error.hidden {
+  margin-bottom: 0;
+  height: 0;
+  opacity: 0;
+}
+
 .locations {
   /* margin-bottom: 8rem; */
   width: 100%;
-  list-style: none;
   font-size: 2rem;
 }
 
@@ -180,6 +192,7 @@ a:visited {
   border-radius: 1rem;
   margin: 2rem 3rem 2rem 3rem;
   cursor: pointer;
+  list-style: none;
   /* overflow: hidden; */
 }
 
