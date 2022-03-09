@@ -167,14 +167,16 @@ a:visited {
   width: 0;
 }
 
-.error {
+.status {
   color: #fff;
-  font-size: 1.8rem;
+  font-size: 2.5rem;
   text-align: center;
   padding: 0 2.25rem;
+  transition: all 0.5s, transform 1ms;
 }
 
-.error.hidden {
+.status.hidden {
+  transform: translateY(-10rem);
   margin-bottom: 0;
   height: 0;
   opacity: 0;
