@@ -91,6 +91,10 @@ a:visited {
   transition: all 0.2s;
 }
 
+.form__btn {
+  display: none;
+}
+
 .btn {
   border-radius: 10px;
   font-size: 1.9rem;
@@ -168,9 +172,11 @@ a:visited {
 }
 
 .status {
+  display: flex;
+  justify-content: center;
   color: #fff;
   font-size: 2.5rem;
-  text-align: center;
+  text-align: justify;
   padding: 0 2.25rem;
   transition: all 0.5s, transform 1ms;
 }
